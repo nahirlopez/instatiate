@@ -5,20 +5,16 @@ using UnityEngine;
 public class ShowMessage : MonoBehaviour
 {
     public GameObject micubitoo;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void CloneObject()
     {
-        Instantiate(micubitoo);
+        int i=0;
+        while (i < 3)
+        {
+            i++;
+            Instantiate(micubitoo);
+        }
+        
     }
     
 }
